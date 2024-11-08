@@ -9,7 +9,7 @@ local HooksList = { // remove the hook from the list to disable the logging
 
 ConcommandLogs = true // set to false if you want to disable console commands logging
 
-// works only for commands added with concommand.Add, see https://gmo dwiki.com/concommand.Run
+// works only for commands added with concommand.Add, see https://gmodwiki.com/concommand.Run
 concommand._Run = concommand._Run or concommand.Run
 function concommand.Run(ply, cmd, args, arg_str)
 	if IsValid(ply) and ply:IsPlayer() and (cmd ~= nil) and ConcommandLogs then
